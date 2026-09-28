@@ -1,4 +1,4 @@
-export default async function handler(req, res) {
+module.exports = async function handler(req, res) {
   if (req.method !== "POST") {
     return res.status(405).json({ error: "Method not allowed" });
   }
@@ -10,7 +10,13 @@ export default async function handler(req, res) {
   }
 
   try {
-    const { event_id, conversion_time, conversion_id, event_source_url, identifiers } = req.body;
+    const {
+      event_id,
+      conversion_time,
+      conversion_id,
+      event_source_url,
+      identifiers
+    } = req.body;
 
     const response = await fetch(
       "https://ads-api.x.com/12/measurement/conversions/rcew3",
@@ -38,6 +44,8 @@ export default async function handler(req, res) {
 
     return res.status(response.status).send(data);
   } catch (error) {
-    return res.status(500).json({ error: "Conversion request failed" });
+    return res.status(500).json({
+      error: "Conversion request failed"
+    });
   }
-}
+};
