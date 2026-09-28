@@ -1,27 +1,43 @@
-POST https://ads-api.x.com/12/measurement/conversions/rcew3
-X-Pixel-Token: {token}
-Content-Type: application/json
+export default async function handler(req, res) {
+  if (req.method !== "POST") {
+    return res.status(405).json({ error: "Method not allowed" });
+  }
 
-{
-  "conversions": [
-    {
-      "conversion_time": "2024-06-01T12:34:56.000Z",
-      "event_id": "tw-rcew3-xxxxx",
-      // Optional.
-      "event_source_url": "https://www.example.com/checkout",
-      // Optional, used for deduplication with web pixel events.
-      "conversion_id": "order-9f8b7c6d",
-      // Provide at least one of: twclid, hashed_email, hashed_phone_number,
-      // or the pair of ip_address and user_agent.
-      "identifiers": [
-        {
-          "twclid": "twclid",
-          "hashed_email": "64hexchars_sha256",
-          "hashed_phone_number": "64hexchars_sha256",
-          "ip_address": "192.0.2.1",
-          "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)"
-        }
-      ]
-    }
-  ]
+  const token = process.env.X_PIXEL_TOKEN;
+
+  if (!token) {
+    return res.status(500).json({ error: "Missing X Pixel token" });
+  }
+
+  try {
+    const { event_id, conversion_time, conversion_id, event_source_url, identifiers } = req.body;
+
+    const response = await fetch(
+      "https://ads-api.x.com/12/measurement/conversions/rcew3",
+      {
+        method: "POST",
+        headers: {
+          "X-Pixel-Token": token,
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+          conversions: [
+            {
+              event_id,
+              conversion_time,
+              conversion_id,
+              event_source_url,
+              identifiers
+            }
+          ]
+        })
+      }
+    );
+
+    const data = await response.text();
+
+    return res.status(response.status).send(data);
+  } catch (error) {
+    return res.status(500).json({ error: "Conversion request failed" });
+  }
 }
