@@ -38,9 +38,9 @@ twq('config','rgqcl');
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-  gtag('config', 'G-76DCX85TB9');
+  gtag('config', 'G-76DCX85TB9');  
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover">
   <title>Straddle EA Smart Automation — Volatility Trading Engine</title>
   <meta name="description" content="Straddle EA Smart Automation — Institutional Quantitative Algorithmic Trading Software Architecture and Educational System Overview.">
   <link rel="canonical" href="https://straddle-tau.vercel.app/">
@@ -52,24 +52,6 @@ twq('config','rgqcl');
   <meta property="og:description" content="Institutional Quantitative Algorithmic Trading Software Architecture and Educational System Overview.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://straddle-tau.vercel.app/">
-
-  <!-- X conversion tracking base code & event -->
-  <script>
-    !function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
-    },s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='https://static.ads-twitter.com/uwt.js',
-    a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
-    twq('config','rgqcl');
-    twq('event', 'tw-rgqcl-rgqcy', {});
-  </script>
-
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-76DCX85TB9"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-76DCX85TB9');
-  </script>
 
   <!-- Performance Preconnects -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -120,6 +102,8 @@ twq('config','rgqcl');
     font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
     line-height: 1.6;
     min-height: 100%;
+    width: 100%;
+    max-width: 100%;
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     position: relative;
@@ -162,11 +146,13 @@ twq('config','rgqcl');
   }
 
   .container {
+    width: 100%;
     max-width: 1060px;
     margin: 0 auto;
     padding: 40px 20px 80px;
     position: relative;
     z-index: 1;
+    box-sizing: border-box;
   }
 
   /* Header Section */
@@ -2316,293 +2302,437 @@ twq('config','rgqcl');
     }
   }
 
-  /* Tablets & Large Phones (<= 768px) */
+  /* Tablets & Mobile Devices (<= 768px) */
   @media (max-width: 768px) {
-    .container {
-      padding: 24px 16px 50px;
+    html, body {
+      font-size: 15px;
+      overflow-x: hidden !important;
     }
+
+    .container {
+      width: 100% !important;
+      max-width: 100% !important;
+      padding: 18px 14px 44px !important;
+      box-sizing: border-box !important;
+      overflow-x: hidden !important;
+    }
+
+    /* Top Sticky Bar */
+    .offer-top-bar {
+      padding: 7px 10px !important;
+    }
+    .offer-top-content {
+      justify-content: center !important;
+      text-align: center !important;
+      white-space: normal !important;
+      flex-wrap: wrap !important;
+      gap: 6px !important;
+    }
+    .offer-top-left {
+      font-size: 12px !important;
+      white-space: normal !important;
+      text-align: center !important;
+      justify-content: center !important;
+    }
+
+    /* Logo & Header */
+    .logo-wrapper {
+      width: 100px !important;
+      height: 100px !important;
+      margin: 0 auto 14px !important;
+    }
+    .logo-3d-render {
+      width: 65px !important;
+      height: 65px !important;
+    }
+
+    /* Hero Section */
+    .hero {
+      margin-bottom: 22px !important;
+      text-align: center !important;
+    }
+    .hero h1 {
+      font-size: clamp(28px, 8vw, 38px) !important;
+      letter-spacing: -0.5px !important;
+      margin-bottom: 12px !important;
+    }
+    .hero-tagline {
+      font-size: 14.5px !important;
+      line-height: 1.55 !important;
+      margin-bottom: 20px !important;
+      padding: 0 4px !important;
+    }
+
+    /* CTA Buttons Full Width Stack */
+    .cta-group {
+      display: flex !important;
+      flex-direction: column !important;
+      width: 100% !important;
+      gap: 12px !important;
+      margin-bottom: 16px !important;
+      align-items: stretch !important;
+    }
+    .cta-group a.btn-primary,
+    .cta-group a.btn-hero-secondary {
+      width: 100% !important;
+      max-width: 100% !important;
+      padding: 15px 16px !important;
+      font-size: 15px !important;
+      justify-content: center !important;
+      text-align: center !important;
+      box-sizing: border-box !important;
+    }
+
+    /* Subtext Points Vertical Stack */
+    .cta-subtext {
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: center !important;
+      gap: 8px !important;
+      font-size: 12.5px !important;
+    }
+
+    /* Overview Card (Access / Server / Platform) */
+    .overview-card {
+      width: 100% !important;
+      box-sizing: border-box !important;
+      padding: 16px 14px 8px !important;
+      border-radius: var(--radius-md) !important;
+      margin-bottom: 28px !important;
+    }
+    .overview-row {
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: flex-start !important;
+      gap: 4px !important;
+      padding: 10px 0 !important;
+    }
+    .overview-label {
+      font-size: 12px !important;
+    }
+    .overview-value {
+      font-size: 13.5px !important;
+      text-align: left !important;
+      word-break: break-word !important;
+    }
+
+    /* What is Straddle EA / Offer Section */
+    .offer-section {
+      padding: 24px 14px 28px !important;
+      border-radius: 18px !important;
+      margin: 24px 0 32px !important;
+      width: 100% !important;
+      box-sizing: border-box !important;
+    }
+    .offer-header {
+      margin-bottom: 18px !important;
+    }
+    .offer-main-title {
+      font-size: clamp(22px, 6.5vw, 28px) !important;
+      margin-bottom: 10px !important;
+    }
+    .offer-subtitle {
+      font-size: 13.5px !important;
+      line-height: 1.6 !important;
+    }
+    .offer-banner-container {
+      width: 100% !important;
+      max-width: 100% !important;
+      margin: 0 auto 20px !important;
+      border-radius: 14px !important;
+    }
+    .offer-banner-container img,
+    .offer-banner-img {
+      width: 100% !important;
+      max-width: 380px !important;
+      height: auto !important;
+      display: block !important;
+      margin: 0 auto !important;
+      border-radius: 14px !important;
+    }
+
+    /* Features Grid (1 column) */
     .features-grid {
-      grid-template-columns: 1fr;
-      gap: 14px;
+      grid-template-columns: 1fr !important;
+      gap: 12px !important;
+      width: 100% !important;
+    }
+    .feature-item {
+      padding: 16px 14px !important;
+      border-radius: 12px !important;
+      gap: 8px !important;
+      box-sizing: border-box !important;
+    }
+    .feature-title {
+      font-size: 14.5px !important;
+    }
+    .feature-desc {
+      font-size: 13px !important;
+      line-height: 1.5 !important;
+    }
+
+    /* Compliance Box */
+    .compliance-box {
+      padding: 14px 12px !important;
+      border-radius: 12px !important;
+      font-size: 11px !important;
+      line-height: 1.6 !important;
+      margin-top: 24px !important;
+      width: 100% !important;
+      box-sizing: border-box !important;
+    }
+    .compliance-header {
+      font-size: 10.5px !important;
+    }
+
+    /* Section Headings */
+    .section-heading {
+      margin: 32px 0 16px !important;
+    }
+    .section-title {
+      font-size: clamp(20px, 5.5vw, 24px) !important;
+    }
+    .section-desc {
+      font-size: 13px !important;
+      padding: 0 4px !important;
+    }
+
+    /* Setup Grid & Boxes */
+    .setup-grid {
+      grid-template-columns: 1fr !important;
+      gap: 12px !important;
+      width: 100% !important;
+    }
+    .setup-box {
+      padding: 16px 14px !important;
+      text-align: left !important;
+      box-sizing: border-box !important;
+    }
+
+    /* Advantages Card */
+    .advantages-card {
+      padding: 16px 14px !important;
+      border-radius: 16px !important;
+      width: 100% !important;
+      box-sizing: border-box !important;
     }
     .adv-list {
-      grid-template-columns: 1fr;
-      gap: 14px;
+      grid-template-columns: 1fr !important;
+      gap: 14px !important;
+      width: 100% !important;
+    }
+    .adv-item {
+      gap: 10px !important;
+    }
+    .adv-content h4 {
+      font-size: 14px !important;
+      margin-bottom: 2px !important;
+    }
+    .adv-content p {
+      font-size: 12.5px !important;
+      line-height: 1.5 !important;
+    }
+
+    /* Straddle Architecture Pipeline */
+    .straddle-pipeline-card {
+      padding: 20px 14px 24px !important;
+      border-radius: 16px !important;
+      margin: 28px 0 20px !important;
+      width: 100% !important;
+      box-sizing: border-box !important;
+      overflow-x: hidden !important;
+    }
+    .pipeline-topbar {
+      flex-direction: column !important;
+      align-items: flex-start !important;
+      gap: 10px !important;
+      margin-bottom: 16px !important;
+    }
+    .pipeline-main-title {
+      font-size: clamp(20px, 5.5vw, 24px) !important;
+    }
+    .pipeline-subtitle {
+      font-size: 13px !important;
+      line-height: 1.5 !important;
+    }
+    .pipeline-body {
+      display: flex !important;
+      flex-direction: column !important;
+      gap: 18px !important;
+      width: 100% !important;
+    }
+    .pipeline-connector-wrapper {
+      display: none !important;
+    }
+    .orders-grid-col,
+    .core-engine-box,
+    .execution-terminal-box {
+      width: 100% !important;
+      max-width: 100% !important;
+      box-sizing: border-box !important;
+      margin-left: 0 !important;
     }
     .tier-row {
-      grid-template-columns: 1fr;
-      gap: 10px;
+      grid-template-columns: 1fr !important;
+      gap: 8px !important;
+      width: 100% !important;
+    }
+    .order-card {
+      padding: 10px 12px !important;
+      gap: 8px !important;
+      width: 100% !important;
+      box-sizing: border-box !important;
+    }
+    .order-details h4 {
+      font-size: 12px !important;
+      white-space: normal !important;
+    }
+    .order-details p {
+      font-size: 10.5px !important;
+    }
+    .order-tag {
+      font-size: 9.5px !important;
+      padding: 4px 6px !important;
+    }
+    .core-engine-box {
+      padding: 20px 14px !important;
+      border-radius: 14px !important;
+    }
+    .engine-name {
+      font-size: 15px !important;
+    }
+    .engine-desc {
+      font-size: 11.5px !important;
+      margin-bottom: 12px !important;
+    }
+    .engine-feature-list li {
+      font-size: 11.5px !important;
+    }
+    .execution-terminal-box {
+      padding: 20px 14px !important;
+      border-radius: 14px !important;
+    }
+    .terminal-action-title {
+      font-size: 14px !important;
+    }
+
+    /* Disclosure Box */
+    .disclosure-box {
+      padding: 16px 14px !important;
+      border-radius: 14px !important;
+      margin: 24px 0 18px !important;
+      font-size: 11.5px !important;
+      line-height: 1.6 !important;
+      width: 100% !important;
+      box-sizing: border-box !important;
+    }
+    .disclosure-title {
+      font-size: 12px !important;
+      gap: 6px !important;
+      margin-bottom: 8px !important;
+    }
+
+    /* Support Section */
+    .support-section {
+      padding: 24px 14px !important;
+      border-radius: 16px !important;
+      margin-top: 28px !important;
+      width: 100% !important;
+      box-sizing: border-box !important;
+    }
+    .support-section h3 {
+      font-size: 19px !important;
+      margin-bottom: 6px !important;
+    }
+    .support-section p {
+      font-size: 13.5px !important;
+      line-height: 1.55 !important;
+      margin-bottom: 12px !important;
     }
     .support-buttons {
-      flex-direction: column;
-      align-items: stretch;
-      gap: 12px;
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: stretch !important;
+      gap: 12px !important;
+      width: 100% !important;
     }
     .support-buttons a.btn-primary,
     .support-buttons a.btn-secondary {
       width: 100% !important;
       max-width: 100% !important;
-      text-align: center;
-      justify-content: center;
+      text-align: center !important;
+      justify-content: center !important;
+      padding: 15px 16px !important;
+      box-sizing: border-box !important;
+    }
+
+    /* Footer */
+    footer {
+      padding: 24px 0 8px !important;
+    }
+    .footer-links {
+      font-size: 11.5px !important;
+      gap: 6px 10px !important;
+      flex-wrap: wrap !important;
+      justify-content: center !important;
+    }
+    footer p {
+      font-size: 11px !important;
     }
   }
 
-  /* Standard Mobile Viewports (<= 640px) */
-  @media (max-width: 640px) {
-    html, body {
-      font-size: 15px;
-    }
+  /* Compact Smartphones (<= 480px) */
+  @media (max-width: 480px) {
     .container {
-      padding: 18px 12px 40px;
-    }
-    .logo-wrapper {
-      width: 100px;
-      height: 100px;
-      margin-bottom: 14px;
-    }
-    .logo-3d-render {
-      width: 65px;
-      height: 65px;
-    }
-    .hero {
-      margin-bottom: 24px;
+      padding: 16px 12px 36px !important;
     }
     .hero h1 {
-      font-size: clamp(30px, 8.5vw, 38px);
-      letter-spacing: -0.5px;
-      margin-bottom: 12px;
+      font-size: clamp(26px, 8.5vw, 32px) !important;
     }
     .hero-tagline {
-      font-size: 14.5px;
-      line-height: 1.55;
-      margin-bottom: 22px;
-      padding: 0 4px;
+      font-size: 13.5px !important;
     }
-    .cta-group {
-      flex-direction: column;
-      width: 100%;
-      gap: 12px;
-      margin-bottom: 16px;
+    .btn-primary,
+    .btn-hero-secondary,
+    .btn-secondary {
+      font-size: 14.5px !important;
+      padding: 14px 14px !important;
     }
-    .cta-group a.btn-primary,
-    .cta-group a.btn-hero-secondary {
-      width: 100%;
-      max-width: 100%;
-      padding: 15px 18px;
-      font-size: 15px;
-      justify-content: center;
-      text-align: center;
+    .logo-wrapper {
+      width: 90px !important;
+      height: 90px !important;
+      margin-bottom: 12px !important;
     }
-    .cta-subtext {
-      flex-direction: column;
-      align-items: center;
-      gap: 8px;
-      font-size: 12px;
-    }
-    .overview-card {
-      padding: 16px 14px 8px;
-      border-radius: var(--radius-md);
-      margin-bottom: 28px !important;
-    }
-    .overview-row {
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 4px;
-      padding: 10px 0;
-    }
-    .overview-label {
-      font-size: 12.5px;
-    }
-    .overview-value {
-      font-size: 13.5px;
-      text-align: left;
-      word-break: break-word;
-    }
-    .offer-section {
-      padding: 24px 14px 28px;
-      border-radius: 18px;
-      margin: 24px 0 32px;
-    }
-    .offer-header {
-      margin-bottom: 20px;
+    .logo-3d-render {
+      width: 58px !important;
+      height: 58px !important;
     }
     .offer-main-title {
-      font-size: clamp(22px, 6.5vw, 28px);
-      margin-bottom: 10px;
-    }
-    .offer-subtitle {
-      font-size: 13.5px;
-      line-height: 1.6;
-    }
-    .offer-banner-container {
-      max-width: 100%;
-      margin: 0 auto 24px;
-      border-radius: 14px;
-    }
-    .feature-item {
-      padding: 16px 14px;
-      border-radius: 12px;
-      gap: 8px;
-    }
-    .feature-title {
-      font-size: 14.5px;
-    }
-    .feature-desc {
-      font-size: 13px;
-      line-height: 1.5;
-    }
-    .compliance-box {
-      padding: 14px 12px;
-      border-radius: 12px;
-      font-size: 11px;
-      line-height: 1.6;
-      margin-top: 24px !important;
-    }
-    .compliance-header {
-      font-size: 10.5px;
-    }
-    .section-heading {
-      margin: 36px 0 16px !important;
-    }
-    .section-title {
-      font-size: clamp(20px, 5.5vw, 24px);
-    }
-    .section-desc {
-      font-size: 13px;
-      padding: 0 4px;
-    }
-    .setup-box {
-      padding: 16px 14px;
-      text-align: left;
-    }
-    .advantages-card {
-      padding: 16px 14px;
-      border-radius: 16px;
-    }
-    .adv-item {
-      gap: 10px;
-    }
-    .adv-content h4 {
-      font-size: 14px;
-      margin-bottom: 2px;
-    }
-    .adv-content p {
-      font-size: 12.5px;
-      line-height: 1.5;
-    }
-    .straddle-pipeline-card {
-      padding: 20px 14px 24px;
-      border-radius: 16px;
-      margin: 30px 0 20px;
-    }
-    .pipeline-topbar {
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 10px;
-      margin-bottom: 16px;
-    }
-    .pipeline-main-title {
-      font-size: clamp(20px, 5.5vw, 24px);
-    }
-    .pipeline-subtitle {
-      font-size: 13px;
-      line-height: 1.5;
-    }
-    .order-card {
-      padding: 10px 12px;
-      gap: 8px;
-    }
-    .order-details h4 {
-      font-size: 12px;
-      white-space: normal;
-    }
-    .order-details p {
-      font-size: 10.5px;
-    }
-    .order-tag {
-      font-size: 9.5px;
-      padding: 4px 6px;
-    }
-    .core-engine-box {
-      padding: 20px 14px;
-      border-radius: 14px;
-    }
-    .engine-name {
-      font-size: 15px;
-    }
-    .engine-desc {
-      font-size: 11.5px;
-      margin-bottom: 12px;
-    }
-    .engine-feature-list li {
-      font-size: 11.5px;
-    }
-    .execution-terminal-box {
-      padding: 20px 14px;
-      border-radius: 14px;
-    }
-    .terminal-action-title {
-      font-size: 14px;
-    }
-    .disclosure-box {
-      padding: 16px 14px;
-      border-radius: 14px;
-      margin: 26px 0 18px;
-      font-size: 11.5px;
-      line-height: 1.6;
-    }
-    .disclosure-title {
-      font-size: 12px;
-      gap: 6px;
-      margin-bottom: 8px;
-    }
-    .support-section {
-      padding: 24px 14px;
-      border-radius: 16px;
-      margin-top: 30px;
-    }
-    .support-section h3 {
-      font-size: 19px;
-      margin-bottom: 6px;
-    }
-    .support-section p {
-      font-size: 13.5px;
-      line-height: 1.55;
-      margin-bottom: 10px;
-    }
-    footer {
-      padding: 24px 0 8px;
-    }
-    .footer-links {
-      font-size: 11.5px;
-      gap: 6px 10px;
-    }
-    footer p {
-      font-size: 11px;
+      font-size: 22px !important;
     }
   }
 
   /* Extra Small Devices (<= 380px) */
   @media (max-width: 380px) {
     .container {
-      padding: 14px 10px 36px;
+      padding: 12px 8px 30px !important;
     }
     .hero h1 {
-      font-size: 28px;
+      font-size: 24px !important;
     }
     .btn-primary,
     .btn-hero-secondary,
     .btn-secondary {
-      font-size: 13.5px !important;
-      padding: 13px 12px !important;
+      font-size: 13px !important;
+      padding: 12px 10px !important;
     }
     .order-card {
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 6px;
+      flex-direction: column !important;
+      align-items: flex-start !important;
+      gap: 6px !important;
     }
     .order-tag {
-      align-self: flex-start;
+      align-self: flex-start !important;
     }
   }
 
@@ -3124,7 +3254,7 @@ twq('config','rgqcl');
       <p style="margin-bottom: 12px;">Join our free Telegram community to explore Straddle EA features, get product updates, and access available setup guidance and technical support.</p>
       <p><strong>Stay connected. Get the information you need to get started.</strong></p>
       <div class="support-buttons">
-        <a class="btn-primary" style="max-width: 300px;" href="https://t.me/yoforexgold" target="_blank" rel="noopener">
+        <a class="btn-primary" href="https://t.me/yoforexgold" target="_blank" rel="noopener">
           Join Free Telegram Channel
         </a>
         <a class="btn-secondary" href="https://t.me/YoForexFunds" target="_blank" rel="noopener">
