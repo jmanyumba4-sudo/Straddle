@@ -1510,17 +1510,6 @@ twq('config','rgqcl');
     color: var(--text-secondary);
   }
 
-  /* Responsive Queries */
-  @media (max-width: 960px) {
-    .mobile-showcase-section {
-      grid-template-columns: 1fr;
-      padding: 32px 24px;
-    }
-    .pipeline-body {
-      grid-template-columns: 1fr;
-      gap: 24px;
-    }
-  }
 
   /* ==========================================================
      LIMITED 20% PROMOTIONAL OFFER & PRICING STYLES (OCT 2026)
@@ -2292,113 +2281,328 @@ twq('config','rgqcl');
     margin-bottom: 8px;
   }
 
-  @media (max-width: 768px) {
-    .features-grid {
-      grid-template-columns: 1fr;
+  /* ==========================================================
+     COMPREHENSIVE RESPONSIVE DESIGN (TABLET & MOBILE)
+     ========================================================== */
+
+  /* Global responsive safety */
+  img, svg {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Tablets & Medium Screens (<= 900px) */
+  @media (max-width: 900px) {
+    .pipeline-body {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+    .pipeline-connector-wrapper {
+      display: none !important;
+    }
+    .execution-terminal-box {
+      margin-left: 0;
+      width: 100%;
+    }
+    .core-engine-box {
+      width: 100%;
+    }
+    .orders-grid-col {
+      width: 100%;
     }
     .setup-grid {
       grid-template-columns: 1fr;
     }
+  }
+
+  /* Tablets & Large Phones (<= 768px) */
+  @media (max-width: 768px) {
+    .container {
+      padding: 24px 16px 50px;
+    }
+    .features-grid {
+      grid-template-columns: 1fr;
+      gap: 14px;
+    }
     .adv-list {
       grid-template-columns: 1fr;
+      gap: 14px;
     }
     .tier-row {
       grid-template-columns: 1fr;
-    }
-    .container {
-      padding: 28px 16px 60px;
+      gap: 10px;
     }
     .support-buttons {
       flex-direction: column;
       align-items: stretch;
+      gap: 12px;
     }
-    .pricing-grid {
-      grid-template-columns: 1fr;
-    }
-    .steps-grid {
-      grid-template-columns: 1fr;
-    }
-    .vip-pass-showcase {
-      grid-template-columns: 1fr;
-    }
-    .countdown-digits-grid {
-      gap: 8px;
-    }
-    .countdown-number {
-      font-size: 24px;
-    }
-    .offer-top-bar {
-      padding: 8px 10px;
-    }
-    .offer-top-content {
-      flex-wrap: wrap;
-      white-space: normal;
-      justify-content: center;
+    .support-buttons a.btn-primary,
+    .support-buttons a.btn-secondary {
+      width: 100% !important;
+      max-width: 100% !important;
       text-align: center;
-      gap: 6px;
-    }
-    .offer-top-left {
-      width: 100%;
       justify-content: center;
-      font-size: 12px;
-      white-space: normal;
-      flex-wrap: wrap;
-    }
-    .offer-top-right {
-      width: 100%;
-      justify-content: center;
-      gap: 8px;
-      flex-wrap: wrap;
-      margin-top: 2px;
-    }
-    .mini-timer-pill {
-      font-size: 11px;
-      padding: 3px 8px;
-    }
-    .btn-top-offer {
-      font-size: 11.5px;
-      padding: 4px 11px;
     }
   }
 
-  @media (max-width: 480px) {
-    .offer-top-left {
-      font-size: 11.5px;
-      gap: 5px;
+  /* Standard Mobile Viewports (<= 640px) */
+  @media (max-width: 640px) {
+    html, body {
+      font-size: 15px;
     }
-    .offer-top-badge {
-      font-size: 9.5px;
-      padding: 1.5px 6px;
+    .container {
+      padding: 18px 12px 40px;
     }
-    .mini-timer-pill {
-      font-size: 10.5px;
-      padding: 2.5px 7px;
+    .logo-wrapper {
+      width: 100px;
+      height: 100px;
+      margin-bottom: 14px;
     }
-    .btn-top-offer {
-      font-size: 11px;
-      padding: 3.5px 9px;
+    .logo-3d-render {
+      width: 65px;
+      height: 65px;
     }
-    .overview-row {
+    .hero {
+      margin-bottom: 24px;
+    }
+    .hero h1 {
+      font-size: clamp(30px, 8.5vw, 38px);
+      letter-spacing: -0.5px;
+      margin-bottom: 12px;
+    }
+    .hero-tagline {
+      font-size: 14.5px;
+      line-height: 1.55;
+      margin-bottom: 22px;
+      padding: 0 4px;
+    }
+    .cta-group {
       flex-direction: column;
-      align-items: flex-start;
-      gap: 4px;
+      width: 100%;
+      gap: 12px;
+      margin-bottom: 16px;
     }
-    .overview-value {
-      text-align: left;
+    .cta-group a.btn-primary,
+    .cta-group a.btn-hero-secondary {
+      width: 100%;
+      max-width: 100%;
+      padding: 15px 18px;
+      font-size: 15px;
+      justify-content: center;
+      text-align: center;
     }
     .cta-subtext {
       flex-direction: column;
       align-items: center;
       gap: 8px;
+      font-size: 12px;
+    }
+    .overview-card {
+      padding: 16px 14px 8px;
+      border-radius: var(--radius-md);
+      margin-bottom: 28px !important;
+    }
+    .overview-row {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 4px;
+      padding: 10px 0;
+    }
+    .overview-label {
+      font-size: 12.5px;
+    }
+    .overview-value {
+      font-size: 13.5px;
+      text-align: left;
+      word-break: break-word;
     }
     .offer-section {
-      padding: 30px 18px 36px;
+      padding: 24px 14px 28px;
+      border-radius: 18px;
+      margin: 24px 0 32px;
     }
-    .countdown-box-wrapper {
-      padding: 16px 12px;
+    .offer-header {
+      margin-bottom: 20px;
     }
-    .pricing-card {
-      padding: 26px 18px;
+    .offer-main-title {
+      font-size: clamp(22px, 6.5vw, 28px);
+      margin-bottom: 10px;
+    }
+    .offer-subtitle {
+      font-size: 13.5px;
+      line-height: 1.6;
+    }
+    .offer-banner-container {
+      max-width: 100%;
+      margin: 0 auto 24px;
+      border-radius: 14px;
+    }
+    .feature-item {
+      padding: 16px 14px;
+      border-radius: 12px;
+      gap: 8px;
+    }
+    .feature-title {
+      font-size: 14.5px;
+    }
+    .feature-desc {
+      font-size: 13px;
+      line-height: 1.5;
+    }
+    .compliance-box {
+      padding: 14px 12px;
+      border-radius: 12px;
+      font-size: 11px;
+      line-height: 1.6;
+      margin-top: 24px !important;
+    }
+    .compliance-header {
+      font-size: 10.5px;
+    }
+    .section-heading {
+      margin: 36px 0 16px !important;
+    }
+    .section-title {
+      font-size: clamp(20px, 5.5vw, 24px);
+    }
+    .section-desc {
+      font-size: 13px;
+      padding: 0 4px;
+    }
+    .setup-box {
+      padding: 16px 14px;
+      text-align: left;
+    }
+    .advantages-card {
+      padding: 16px 14px;
+      border-radius: 16px;
+    }
+    .adv-item {
+      gap: 10px;
+    }
+    .adv-content h4 {
+      font-size: 14px;
+      margin-bottom: 2px;
+    }
+    .adv-content p {
+      font-size: 12.5px;
+      line-height: 1.5;
+    }
+    .straddle-pipeline-card {
+      padding: 20px 14px 24px;
+      border-radius: 16px;
+      margin: 30px 0 20px;
+    }
+    .pipeline-topbar {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+    .pipeline-main-title {
+      font-size: clamp(20px, 5.5vw, 24px);
+    }
+    .pipeline-subtitle {
+      font-size: 13px;
+      line-height: 1.5;
+    }
+    .order-card {
+      padding: 10px 12px;
+      gap: 8px;
+    }
+    .order-details h4 {
+      font-size: 12px;
+      white-space: normal;
+    }
+    .order-details p {
+      font-size: 10.5px;
+    }
+    .order-tag {
+      font-size: 9.5px;
+      padding: 4px 6px;
+    }
+    .core-engine-box {
+      padding: 20px 14px;
+      border-radius: 14px;
+    }
+    .engine-name {
+      font-size: 15px;
+    }
+    .engine-desc {
+      font-size: 11.5px;
+      margin-bottom: 12px;
+    }
+    .engine-feature-list li {
+      font-size: 11.5px;
+    }
+    .execution-terminal-box {
+      padding: 20px 14px;
+      border-radius: 14px;
+    }
+    .terminal-action-title {
+      font-size: 14px;
+    }
+    .disclosure-box {
+      padding: 16px 14px;
+      border-radius: 14px;
+      margin: 26px 0 18px;
+      font-size: 11.5px;
+      line-height: 1.6;
+    }
+    .disclosure-title {
+      font-size: 12px;
+      gap: 6px;
+      margin-bottom: 8px;
+    }
+    .support-section {
+      padding: 24px 14px;
+      border-radius: 16px;
+      margin-top: 30px;
+    }
+    .support-section h3 {
+      font-size: 19px;
+      margin-bottom: 6px;
+    }
+    .support-section p {
+      font-size: 13.5px;
+      line-height: 1.55;
+      margin-bottom: 10px;
+    }
+    footer {
+      padding: 24px 0 8px;
+    }
+    .footer-links {
+      font-size: 11.5px;
+      gap: 6px 10px;
+    }
+    footer p {
+      font-size: 11px;
+    }
+  }
+
+  /* Extra Small Devices (<= 380px) */
+  @media (max-width: 380px) {
+    .container {
+      padding: 14px 10px 36px;
+    }
+    .hero h1 {
+      font-size: 28px;
+    }
+    .btn-primary,
+    .btn-hero-secondary,
+    .btn-secondary {
+      font-size: 13.5px !important;
+      padding: 13px 12px !important;
+    }
+    .order-card {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 6px;
+    }
+    .order-tag {
+      align-self: flex-start;
     }
   }
 
@@ -2816,7 +3020,7 @@ twq('config','rgqcl');
         </div>
 
         <!-- Connecting SVG Animated Stream Bridge -->
-        <div style="display:flex; align-items:center; justify-content:center; height:100%;">
+        <div class="pipeline-connector-wrapper" style="display:flex; align-items:center; justify-content:center; height:100%;">
           <svg class="pipeline-connector-svg" viewBox="0 0 60 200" fill="none">
             <!-- Static Wire Guides -->
             <path d="M 0 35 C 30 35, 45 100, 60 100" class="stream-wire-gold" />
