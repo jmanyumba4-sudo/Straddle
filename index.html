@@ -39,20 +39,37 @@ twq('config','rgqcl');
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'G-76DCX85TB9');
-</script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Straddle EA Smart Automation Volatility Trading Engine</title>
-  <meta name="description" content="Straddle EA Smart Automation â€” Institutional Quantitative Algorithmic Trading Software Architecture and Educational System Overview.">
+  <title>Straddle EA Smart Automation — Volatility Trading Engine</title>
+  <meta name="description" content="Straddle EA Smart Automation — Institutional Quantitative Algorithmic Trading Software Architecture and Educational System Overview.">
   <link rel="canonical" href="https://straddle-tau.vercel.app/">
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#070609">
 
   <!-- Open Graph / Social Meta -->
-  <meta property="og:title" content="Straddle EA Smart Automation â€” Volatility Trading Engine">
+  <meta property="og:title" content="Straddle EA Smart Automation — Volatility Trading Engine">
   <meta property="og:description" content="Institutional Quantitative Algorithmic Trading Software Architecture and Educational System Overview.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://straddle-tau.vercel.app/">
+
+  <!-- X conversion tracking base code & event -->
+  <script>
+    !function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
+    },s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='https://static.ads-twitter.com/uwt.js',
+    a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
+    twq('config','rgqcl');
+    twq('event', 'tw-rgqcl-rgqcy', {});
+  </script>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-76DCX85TB9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-76DCX85TB9');
+  </script>
 
   <!-- Performance Preconnects -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -64,33 +81,6 @@ twq('config','rgqcl');
   <noscript>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600;700&display=swap">
   </noscript>
-
-  <!-- Analytics & Conversion Tracking (Deferred to idle for 0ms main thread blocking) -->
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    function initTrackers() {
-      if (window._trackersLoaded) return;
-      window._trackersLoaded = true;
-      gtag('js', new Date());
-      gtag('config', 'G-76DCX85TB9');
-      var ga = document.createElement('script');
-      ga.async = true;
-      ga.src = 'https://www.googletagmanager.com/gtag/js?id=G-76DCX85TB9';
-      document.head.appendChild(ga);
-
-      !function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
-      },s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='https://static.ads-twitter.com/uwt.js',
-      a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
-      twq('config','rgqcl');
-      twq('event', 'tw-rgqcl-rgqcy', {});
-    }
-    if ('requestIdleCallback' in window) {
-      window.requestIdleCallback(initTrackers, { timeout: 2500 });
-    } else {
-      window.addEventListener('load', function() { setTimeout(initTrackers, 800); });
-    }
-  </script>
 <style>
   :root {
     --bg: #070609;
@@ -1844,7 +1834,8 @@ twq('config','rgqcl');
   .offer-banner-container {
     position: relative;
     z-index: 2;
-    margin-bottom: 40px;
+    max-width: 540px;
+    margin: 0 auto 40px;
     border-radius: var(--radius-lg);
     overflow: hidden;
     border: 1px solid rgba(255, 170, 51, 0.4);
@@ -1853,10 +1844,6 @@ twq('config','rgqcl');
   }
 
   .offer-banner-img {
-    aspect-ratio: 1376 / 768;
-    width: 100%;
-    height: auto;
-    display: block;
     width: 100%;
     height: auto;
     display: block;
@@ -1864,24 +1851,20 @@ twq('config','rgqcl');
   }
 
   .offer-banner-container:hover .offer-banner-img {
-    aspect-ratio: 1376 / 768;
-    width: 100%;
-    height: auto;
-    display: block;
     transform: scale(1.015);
   }
 
   .offer-banner-footer-strip {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     background: rgba(12, 8, 15, 0.96);
     border-top: 1px solid rgba(255, 255, 255, 0.08);
-    padding: 14px 22px;
-    font-size: 12.5px;
+    padding: 14px 20px;
+    font-size: 12px;
     color: var(--text-secondary);
     flex-wrap: wrap;
-    gap: 12px;
+    gap: 10px 16px;
   }
 
   .banner-strip-item {
@@ -2427,19 +2410,11 @@ twq('config','rgqcl');
 </head>
 <body>
 
-  <!-- Top Sticky Limited-Time Offer Announcement Bar -->
+  <!-- Top Sticky Announcement Bar -->
   <div class="offer-top-bar" id="offerTopBar">
-    <div class="offer-top-content">
-      <div class="offer-top-left">
-        <span class="offer-top-badge">20% DISCOUNT</span>
-        <span>Yearly: <strong>$1,120</strong> <span class="old-price-pill">$1,400</span> · Lifetime: <strong>$1,360</strong> <span class="old-price-pill">$1,700</span></span>
-      </div>
-      <div class="offer-top-right">
-        <div class="mini-timer-pill">
-          <span>Ends Oct 18:</span>
-          <span id="miniCountdownText">Loading...</span>
-        </div>
-        <a href="#pricing-offer" class="btn-top-offer">Claim 20% Off &rarr;</a>
+    <div class="offer-top-content" style="justify-content: center;">
+      <div class="offer-top-left" style="font-size: 13px; font-weight: 600; color: var(--text-primary); letter-spacing: 0.3px;">
+        <span>Verified MT4 / MT5 Algorithmic System</span>
       </div>
     </div>
   </div>
@@ -2533,10 +2508,6 @@ twq('config','rgqcl');
           <div class="live-dot"></div>
           LIVE
         </div>
-        <div class="offer-pill">
-          <span class="offer-dot-fire"></span>
-          <span>SPECIAL 20% OFFER · EXPIRES OCT 18, 2026</span>
-        </div>
       </div>
     </header>
 
@@ -2544,7 +2515,7 @@ twq('config','rgqcl');
     <section class="hero">
       <h1>Straddle EA</h1>
       <p class="hero-tagline">
-        A structured, dual-boundary analytical methodology designed for disciplined market observation, milestone preservation, and systematic volatility modeling.
+        Discover Straddle EA for MT5, explore its features, and get the latest updates and technical guidance through our free Telegram community.
       </p>
 
       <div class="cta-group">
@@ -2552,24 +2523,21 @@ twq('config','rgqcl');
           <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
             <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.161c-.18.717-.962 4.084-1.362 5.752-.169.705-.43 0.941-.682.964-.548.05-0.964-.361-1.496-.709-.832-.546-1.302-.885-2.11-1.417-.933-.615-.328-.953.204-1.506.139-.145 2.56-2.348 2.607-2.548.006-.025.011-.118-.043-.167s-.127-.033-.182-.02c-.077.018-1.309.833-3.696 2.446-.35.241-.667.359-.95.353-.312-.007-.912-.177-1.358-.322-.548-.178-.983-.272-.945-.574.02-.157.236-.318.647-.484 2.537-1.105 4.23-1.834 5.078-2.187 2.417-1.007 2.92-1.182 3.248-1.188.072-.001.233.017.337.102.088.071.112.167.123.235.012.074.027.241.015.374z"/>
           </svg>
-          Join Channel — It's Free
-        </a>
-        <a class="btn-hero-offer" href="#pricing-offer">
-          20% Discount Plans ($1,120 / $1,360)
+          Join Free Telegram Channel
         </a>
         <a class="btn-hero-secondary" href="https://t.me/YoForexFunds" target="_blank" rel="noopener">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
             <circle cx="12" cy="7" r="4"></circle>
           </svg>
-          Contact Support
+          Contact Administrator
         </a>
       </div>
 
       <div class="cta-subtext">
-        <span><span class="check-icon">✓</span> Free Community Access</span>
-        <span><span class="check-icon">✓</span> 20% Discount Active (Oct 13-18)</span>
-        <span><span class="check-icon">✓</span> Direct Technical Assistance</span>
+        <span><span class="check-icon">✓</span> Zero Emotional Trading</span>
+        <span><span class="check-icon">✓</span> Capital Preservation</span>
+        <span><span class="check-icon">✓</span> Multi-Asset Compatibility</span>
       </div>
     </section>
 
@@ -2604,223 +2572,91 @@ twq('config','rgqcl');
       
       <!-- Section Header -->
       <div class="offer-header">
-        <div class="offer-kicker">
-          <span>LIMITED-TIME FLASH PROMOTION</span>
-        </div>
-        <h2 class="offer-main-title">Straddle EA v1.1.40 — Exclusive 20% Offer</h2>
+        <h2 class="offer-main-title">What Is Straddle EA?</h2>
         <p class="offer-subtitle">
-          Unlock institutional dual-boundary algorithmic execution on MetaTrader 5 at a limited 20% promotional discount. Join our official trading community, secure your verified license key, and deploy tested volatility setfiles before the deadline expires on <strong>October 18, 2026</strong>.
+          Straddle EA is an automated trading Expert Advisor designed for MetaTrader 5 and configured for XAUUSD (Gold) on the M15 timeframe. It uses pending Buy Stop and Sell Stop orders, configurable lot sizing, and trade-management controls according to its settings. Explore the product features and setup information through our official Telegram community.
         </p>
-      </div>
-
-      <!-- Real-Time Countdown Box -->
-      <div class="countdown-box-wrapper">
-        <div class="countdown-label-row">
-          <span>20% DISCOUNT EXPIRES IN</span>
-        </div>
-        <div class="countdown-digits-grid">
-          <div class="countdown-cell">
-            <span class="countdown-number" id="countDays">05</span>
-            <span class="countdown-unit">Days</span>
-          </div>
-          <div class="countdown-cell">
-            <span class="countdown-number" id="countHours">10</span>
-            <span class="countdown-unit">Hours</span>
-          </div>
-          <div class="countdown-cell">
-            <span class="countdown-number" id="countMins">39</span>
-            <span class="countdown-unit">Minutes</span>
-          </div>
-          <div class="countdown-cell">
-            <span class="countdown-number" id="countSecs">45</span>
-            <span class="countdown-unit">Seconds</span>
-          </div>
-        </div>
-        <div class="countdown-note">
-          Strict promotion cutoff: <strong>October 18, 2026 at 23:59:59</strong> · Rates revert to standard pricing after this date.
-        </div>
       </div>
 
       <!-- Promotional Graphic Banner Display -->
       <div class="offer-banner-container">
-        <img src="assets/straddle_offer_banner.jpg" onerror="if(!this.dataset.fallback){this.dataset.fallback=1;this.src='straddle_offer_banner.jpg';}" alt="Straddle EA 20% Discount Promotional Graphic - Institutional Algorithmic Trading Software" class="offer-banner-img" width="1376" height="768" loading="lazy" decoding="async">
-        <div class="offer-banner-footer-strip">
-          <div class="banner-strip-item">
-            <span class="strip-tag-green">●</span> Institutional Quantitative Engine
-          </div>
-          <div class="banner-strip-item">
-            <span class="strip-tag-green">●</span> MT5 Native Tick Routing
-          </div>
-          <div class="banner-strip-item">
-            <span class="strip-tag-green">●</span> 100% Meta &amp; X.com Compliant Disclosures
-          </div>
-          <div class="banner-strip-item">
-            <span class="strip-tag-green">●</span> Official YoForex Certified Release
-          </div>
-        </div>
+        <img src="assets/straddle_box.jpg" onerror="if(!this.dataset.fallback){this.dataset.fallback=1;this.src='straddle_box.jpg';}" alt="Straddle EA MT5 Algorithmic Trading Software" class="offer-banner-img" width="500" height="500" loading="lazy" decoding="async">
       </div>
 
-      <!-- Dual Pricing Grid: Yearly vs Lifetime -->
-      <div class="pricing-grid">
-        
-        <!-- PLAN 1: YEARLY PLAN -->
-        <div class="pricing-card">
-          <div class="plan-header">
-            <div class="plan-tag">ANNUAL MEMBERSHIP</div>
-            <h3 class="plan-title">Yearly License</h3>
-            <p class="plan-desc">Comprehensive 12-month access to the Straddle EA engine, research setfiles, and active market updates.</p>
-          </div>
-
-          <div class="price-wrap">
-            <div class="original-price-row">
-              <span class="original-price">$1,400 USD</span>
-              <span class="discount-badge-chip">SAVE 20% ($280 OFF)</span>
-            </div>
-            <div class="current-price-row">
-              <span class="currency-sym">$</span>
-              <span class="price-amount">1,120</span>
-              <span class="price-period">USD / Year</span>
-            </div>
-            <div class="save-amount-text">20% Discount applied on $1,400 base plan · Valid till Oct 18, 2026</div>
-          </div>
-
-          <ul class="plan-features-list">
-            <li class="plan-feature-item">
-              <span class="plan-check">✓</span>
-              <span><strong>12 Months MT5 Terminal License</strong> for live and demo accounts</span>
-            </li>
-            <li class="plan-feature-item">
-              <span class="plan-check">✓</span>
-              <span><strong>Complete Official SetFiles</strong> (Standard, Conservative &amp; High-Vol Gold)</span>
-            </li>
-            <li class="plan-feature-item">
-              <span class="plan-check">✓</span>
-              <span><strong>Continuous Algorithm Updates</strong> and security patches for 1 full year</span>
-            </li>
-            <li class="plan-feature-item">
-              <span class="plan-check">✓</span>
-              <span><strong>Dynamic News &amp; Volatility Filter</strong> synchronized calibrations</span>
-            </li>
-            <li class="plan-feature-item">
-              <span class="plan-check">✓</span>
-              <span><strong>YoForex VIP Community Channel</strong> access for parameter discussions</span>
-            </li>
-            <li class="plan-feature-item">
-              <span class="plan-check">✓</span>
-              <span><strong>1-on-1 VPS &amp; Terminal Setup Guide</strong> with our technical team</span>
-            </li>
-          </ul>
-
-          <a class="plan-cta-btn btn-plan-yearly" href="https://t.me/YoForexFunds?text=Hi%20Admin%2C%20I%20want%20to%20claim%20the%20Straddle%20EA%20Yearly%20Plan%20with%2020%25%20discount%20at%20%241120%20(Regular%20%241400).%20Promo%20Code%3A%20STRADDLE20" target="_blank" rel="noopener">
-            Claim Yearly Plan ($1,120) &rarr;
-          </a>
-        </div>
-
-        <!-- PLAN 2: LIFETIME PLAN (FEATURED / BEST VALUE) -->
-        <div class="pricing-card featured">
-          <span class="popular-badge">BEST VALUE · LIFETIME PASS</span>
-          <div class="plan-header">
-            <div class="plan-tag">PERMANENT UNLIMITED LICENSE</div>
-            <h3 class="plan-title">Lifetime Access</h3>
-            <p class="plan-desc">Permanent ownership with lifetime license keys, multi-terminal permissions, and all future major version upgrades.</p>
-          </div>
-
-          <div class="price-wrap">
-            <div class="original-price-row">
-              <span class="original-price">$1,700 USD</span>
-              <span class="discount-badge-chip">SAVE 20% ($340 OFF)</span>
-            </div>
-            <div class="current-price-row">
-              <span class="currency-sym">$</span>
-              <span class="price-amount">1,360</span>
-              <span class="price-period">USD / Lifetime</span>
-            </div>
-            <div class="save-amount-text">20% Discount applied on $1,700 base plan · Valid till Oct 18, 2026</div>
-          </div>
-
-          <ul class="plan-features-list">
-            <li class="plan-feature-item">
-              <span class="plan-check">✓</span>
-              <span><strong>Permanent Lifetime MT5 License</strong> — Zero recurring renewal fees forever</span>
-            </li>
-            <li class="plan-feature-item">
-              <span class="plan-check">✓</span>
-              <span><strong>Multi-Account Allocation</strong> — Personal ECN and Prop Firm evaluations</span>
-            </li>
-            <li class="plan-feature-item">
-              <span class="plan-check">✓</span>
-              <span><strong>All Future Major Releases (v1.2, v2.0+)</strong> included at no additional cost</span>
-            </li>
-            <li class="plan-feature-item">
-              <span class="plan-check">✓</span>
-              <span><strong>Full Proprietary SetFile Vault</strong> with historical benchmark backtest templates</span>
-            </li>
-            <li class="plan-feature-item">
-              <span class="plan-check">✓</span>
-              <span><strong>Priority VIP Admin Support</strong> with direct 1-on-1 engineer assistance</span>
-            </li>
-            <li class="plan-feature-item">
-              <span class="plan-check">✓</span>
-              <span><strong>Permanent VIP Lounge Access</strong> in the YoForex Trader Network</span>
-            </li>
-          </ul>
-
-          <a class="plan-cta-btn btn-plan-lifetime" href="https://t.me/YoForexFunds?text=Hi%20Admin%2C%20I%20want%20to%20claim%20the%20Straddle%20EA%20Lifetime%20Plan%20at%2020%25%20OFF%20(%241360).%20Promo%20Code%3A%20STRADDLE20" target="_blank" rel="noopener">
-            Get Lifetime Access ($1,360) &rarr;
-          </a>
-        </div>
-
+      <!-- 4. Key Framework Features (MECHANICS) -->
+      <div class="section-heading" style="margin-top: 48px; margin-bottom: 28px;">
+        <h2 class="section-title">Key Framework Features</h2>
+        <p class="section-desc">Built with mathematical symmetry and robust boundary controls.</p>
       </div>
 
-      <!-- VIP Access Pass Graphic & Security Token Feature -->
-      <div class="vip-pass-showcase">
-        <div class="vip-pass-img-wrapper">
-          <img src="assets/straddle_license_card.jpg" onerror="if(!this.dataset.fallback){this.dataset.fallback=1;this.src='straddle_license_card.jpg';}" alt="Straddle EA Institutional Access Pass VIP License Key" class="vip-pass-img" width="1200" height="896" loading="lazy" decoding="async">
+      <div class="features-grid">
+        <div class="feature-item">
+          <div class="feature-header">
+            <div class="feature-num">01</div>
+            <h3 class="feature-title">Dual-Boundary Model</h3>
+          </div>
+          <p class="feature-desc">Places synchronized Buy &amp; Sell Stop orders around consolidation levels to capture breakout momentum.</p>
         </div>
-        <div class="vip-pass-content">
-          <h3>Cryptographically Bound License Keys</h3>
-          <p>
-            Every Straddle EA license is issued as an authenticated, cryptographic VIP token tied directly to your authorized MetaTrader 5 account ID. Experience clean execution without unauthorized third-party tampering, cloud reliance, or telemetry overhead.
-          </p>
-          <div class="vip-pass-tags">
-            <span class="vip-tag">Anti-Tamper Security</span>
-            <span class="vip-tag">Ultra-Low VPS Latency</span>
-            <span class="vip-tag">Prop-Firm Friendly Bounds</span>
-            <span class="vip-tag">Full Parameter Autonomy</span>
+
+        <div class="feature-item">
+          <div class="feature-header">
+            <div class="feature-num">02</div>
+            <h3 class="feature-title">Dynamic Distance Offset</h3>
           </div>
-          <a class="btn-hero-secondary" style="font-size: 13.5px; padding: 11px 20px;" href="https://t.me/yoforexgold" target="_blank" rel="noopener">
-            Join Telegram VIP Community &rarr;
-          </a>
+          <p class="feature-desc">Automatically adjusts order distances using live volatility metrics instead of fixed pips.</p>
         </div>
-      </div>
 
-      <!-- 3-Step Community Onboarding Guide -->
-      <div class="community-steps-wrapper">
-        <h3 class="community-steps-title">How to Join the Community &amp; Claim Your 20% Discount</h3>
-        <p class="community-steps-subtitle">Simple, direct verification through our official Telegram infrastructure.</p>
+        <div class="feature-item">
+          <div class="feature-header">
+            <div class="feature-num">03</div>
+            <h3 class="feature-title">Predefined Risk Bounds</h3>
+          </div>
+          <p class="feature-desc">Pre-calculates maximum risk and lot exposure per cycle to keep drawdowns strictly controlled.</p>
+        </div>
 
-        <div class="steps-grid">
-          <div class="step-card">
-            <div class="step-badge">1</div>
-            <h4>Join Official Channel</h4>
-            <p>Join our free Telegram community at <strong>@yoforexgold</strong> to see live backtest logs, member analysis, and market updates.</p>
+        <div class="feature-item">
+          <div class="feature-header">
+            <div class="feature-num">04</div>
+            <h3 class="feature-title">Milestone Preservation</h3>
           </div>
-          <div class="step-card">
-            <div class="step-badge">2</div>
-            <h4>Contact Admin &amp; Quote Code</h4>
-            <p>Message our administrator <strong>@YoForexFunds</strong> with your desired plan (Yearly or Lifetime) and quote code:</p>
-            <span class="step-code-pill">STRADDLE20</span>
+          <p class="feature-desc">Step-locks partial profits automatically as price advances toward target levels.</p>
+        </div>
+
+        <div class="feature-item">
+          <div class="feature-header">
+            <div class="feature-num">05</div>
+            <h3 class="feature-title">Event &amp; Schedule Filters</h3>
           </div>
-          <div class="step-card">
-            <div class="step-badge">3</div>
-            <h4>Instant Delivery &amp; Setup</h4>
-            <p>Receive your customized MT5 EA build (.ex5), licensed account binding, calibrated setfiles, and step-by-step VPS installation assistance.</p>
+          <p class="feature-desc">Restricts execution during high-impact news events and inactive market hours to avoid slippage.</p>
+        </div>
+
+        <div class="feature-item">
+          <div class="feature-header">
+            <div class="feature-num">06</div>
+            <h3 class="feature-title">Multi-Interval Confirmation</h3>
           </div>
+          <p class="feature-desc">Validates higher timeframe trend direction before entry to filter out false market noise.</p>
+        </div>
+
+        <div class="feature-item">
+          <div class="feature-header">
+            <div class="feature-num">07</div>
+            <h3 class="feature-title">Lightweight Computational Core</h3>
+          </div>
+          <p class="feature-desc">Built with lightweight MQL5 code for low CPU usage and ultra-fast tick execution.</p>
+        </div>
+
+        <div class="feature-item">
+          <div class="feature-header">
+            <div class="feature-num">08</div>
+            <h3 class="feature-title">Standardized SetFiles</h3>
+          </div>
+          <p class="feature-desc">Comes with pre-tested XAUUSD (Gold) M15 setfile templates ready for instant deployment.</p>
         </div>
       </div>
 
       <!-- Verified Meta & X.com Advertising Guidelines Compliance Box -->
-      <div class="compliance-box">
+      <div class="compliance-box" style="margin-top: 40px;">
         <div class="compliance-header">
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
@@ -2836,78 +2672,6 @@ twq('config','rgqcl');
       </div>
 
     </section>
-
-    <!-- 4. Key Framework Features (MECHANICS) -->
-    <div class="section-heading">
-      <h2 class="section-title">Key Framework Features</h2>
-      <p class="section-desc">Built with mathematical symmetry and robust boundary controls.</p>
-    </div>
-
-    <div class="features-grid">
-      <div class="feature-item">
-        <div class="feature-header">
-          <div class="feature-num">01</div>
-          <h3 class="feature-title">Dual-Boundary Model</h3>
-        </div>
-        <p class="feature-desc">Analyzes range expansion by placing synchronized upper and lower thresholds around key price consolidation levels.</p>
-      </div>
-
-      <div class="feature-item">
-        <div class="feature-header">
-          <div class="feature-num">02</div>
-          <h3 class="feature-title">Dynamic Distance Offset</h3>
-        </div>
-        <p class="feature-desc">Calibrates order distance dynamically based on prevailing session volatility metrics rather than static values.</p>
-      </div>
-
-      <div class="feature-item">
-        <div class="feature-header">
-          <div class="feature-num">03</div>
-          <h3 class="feature-title">Predefined Risk Bounds</h3>
-        </div>
-        <p class="feature-desc">Calculates exposure thresholds per cycle prior to entry, keeping structural limits strictly within preset safety zones.</p>
-      </div>
-
-      <div class="feature-item">
-        <div class="feature-header">
-          <div class="feature-num">04</div>
-          <h3 class="feature-title">Milestone Preservation</h3>
-        </div>
-        <p class="feature-desc">Includes an incremental step-lock mechanism to protect partial movement as momentum progresses toward target levels.</p>
-      </div>
-
-      <div class="feature-item">
-        <div class="feature-header">
-          <div class="feature-num">05</div>
-          <h3 class="feature-title">Event & Schedule Filters</h3>
-        </div>
-        <p class="feature-desc">Integrates custom operating hours and high-impact macroeconomic event timers to prevent erratic liquidity gaps.</p>
-      </div>
-
-      <div class="feature-item">
-        <div class="feature-header">
-          <div class="feature-num">06</div>
-          <h3 class="feature-title">Multi-Interval Confirmation</h3>
-        </div>
-        <p class="feature-desc">Cross-references higher timeframe trends before validating boundary orders to avoid short-term market noise.</p>
-      </div>
-
-      <div class="feature-item">
-        <div class="feature-header">
-          <div class="feature-num">07</div>
-          <h3 class="feature-title">Lightweight Computational Core</h3>
-        </div>
-        <p class="feature-desc">Optimized code structure ensures low CPU overhead, rapid tick processing, and microsecond internal response latency.</p>
-      </div>
-
-      <div class="feature-item">
-        <div class="feature-header">
-          <div class="feature-num">08</div>
-          <h3 class="feature-title">Standardized SetFiles</h3>
-        </div>
-        <p class="feature-desc">Pre-tested parameter templates provided for community research, allowing consistent educational evaluation.</p>
-      </div>
-    </div>
 
     <!-- 5. Recommended Setup (SPECIFICATIONS) -->
     <div class="section-heading">
@@ -2974,32 +2738,6 @@ twq('config','rgqcl');
       </ul>
     </div>
 
-    <!-- 7. Important Considerations (TRANSPARENCY) -->
-    <div class="section-heading">
-      <h2 class="section-title">Important Considerations</h2>
-      <p class="section-desc">Understanding structural constraints is essential for proper evaluation.</p>
-    </div>
-
-    <div class="considerations-card">
-      <ul class="limit-list">
-        <li class="limit-item">
-          <span class="limit-bullet">▲</span>
-          <span><strong>Slippage During Major Releases:</strong> In periods of rapid liquidity depletion, order fills may deviate from requested levels due to natural market dynamics.</span>
-        </li>
-        <li class="limit-item">
-          <span class="limit-bullet">▲</span>
-          <span><strong>Spread Widening at Rollover:</strong> Overnight session changes often trigger significant spread expansion, which may impact tight boundary configurations.</span>
-        </li>
-        <li class="limit-item">
-          <span class="limit-bullet">▲</span>
-          <span><strong>Network & Execution Dependencies:</strong> Sub-optimal internet connections or server lag can degrade execution timing. A stable VPS remains necessary.</span>
-        </li>
-        <li class="limit-item">
-          <span class="limit-bullet">▲</span>
-          <span><strong>Varying Broker Feeds:</strong> Different liquidity providers stream distinct price feeds; results observed on one server will not identically replicate on another.</span>
-        </li>
-      </ul>
-    </div>
     <section class="straddle-pipeline-card">
       <div class="pipeline-topbar">
         <div>
@@ -3178,17 +2916,15 @@ twq('config','rgqcl');
 
     <!-- 10. Support Section -->
     <div class="support-section">
-      <h3>Need Guidance or Have Setup Questions?</h3>
-      <p>Connect directly with our community specialists on Telegram for configuration assistance, setfile guidance, and technical research discussions. Claim your <strong>20% discount</strong> across Yearly ($1,400 &rarr; $1,120) and Lifetime ($1,700 &rarr; $1,360) plans before October 18, 2026.</p>
+      <h3>Need Help with Straddle EA?</h3>
+      <p style="margin-bottom: 12px;">Join our free Telegram community to explore Straddle EA features, get product updates, and access available setup guidance and technical support.</p>
+      <p><strong>Stay connected. Get the information you need to get started.</strong></p>
       <div class="support-buttons">
-        <a class="btn-primary" style="max-width: 260px;" href="https://t.me/yoforexgold" target="_blank" rel="noopener">
-          Join Channel Community
-        </a>
-        <a class="btn-hero-offer" style="font-size: 14.5px; padding: 14px 22px;" href="#pricing-offer">
-          Claim 20% Discount ($1,120 / $1,360) &rarr;
+        <a class="btn-primary" style="max-width: 300px;" href="https://t.me/yoforexgold" target="_blank" rel="noopener">
+          Join Free Telegram Channel
         </a>
         <a class="btn-secondary" href="https://t.me/YoForexFunds" target="_blank" rel="noopener">
-          Contact Support
+          Contact Administrator
         </a>
       </div>
     </div>
